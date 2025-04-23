@@ -23,6 +23,7 @@ def test_valid_file(tmp_path):
         assert doc.body == CONTENT
         assert isinstance(doc.metadata, dict)
         assert doc.metadata["title"] == "TDD"
+        assert doc.hash is not None
 
 
 def test_invalid_file(tmp_path):

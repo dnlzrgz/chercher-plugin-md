@@ -1,3 +1,4 @@
+import hashlib
 from pathlib import Path
 from typing import Generator
 import frontmatter
@@ -10,7 +11,13 @@ def ingest(uri: str) -> Generator[Document, None, None]:
     if not path.exists() or not path.is_file() or path.suffix != ".md":
         return
 
-    with path.open("r") as f:
-        post = frontmatter.loads(f.read())
+    with path.open("rb") as f:
+        digest = hashlib.file_digest(f, "sha256")
+        post = frontmatter.loads(f.read().decode("utf-8"))
 
-    yield Document(uri=path.as_uri(), body=post.content, metadata=post.metadata)
+    yield Document(
+        uri=path.as_uri(),
+        body=post.content,
+        hash=digest.hexdigest(),
+        metadata=post.metadata,
+    )

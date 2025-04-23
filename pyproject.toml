@@ -1,13 +1,13 @@
 [project]
 name = "chercher-plugin-md"
-version = "0.1.1"
-description = "Chercher plugin that add support for markdown files."
+version = "0.1.2"
+description = "Chercher plugin that adds support for markdown files."
 readme = "README.md"
 authors = [{ name = "dnlzrgz", email = "contact@dnlzrgz.com" }]
 license = "MIT"
 classifiers = []
 requires-python = ">=3.13"
-dependencies = ["chercher>=0.1.7", "python-frontmatter>=1.1.0"]
+dependencies = ["chercher>=0.1.14", "python-frontmatter>=1.1.0"]
 
 
 [project.urls]

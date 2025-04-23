@@ -13,7 +13,7 @@ wheels = [
 
 [[package]]
 name = "chercher"
-version = "0.1.13"
+version = "0.1.14"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "chercher-plugin-epub" },
@@ -27,27 +27,27 @@ dependencies = [
     { name = "pydantic-settings" },
     { name = "rich" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/37/dd/b1801e6395a4ce1565e200ce2ee9674ffb02524d7fc8b41d8d9118e3d278/chercher-0.1.13.tar.gz", hash = "sha256:937c5f5aed002b577505287d6b59240a10776ae11deb4ca69bfd7aee8bd63991", size = 25445, upload_time = "2025-04-23T08:44:48.065Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d9/50/2128be984f84beed2fcd1cfe911b37eed6c5ee04814624bd4d807f28a974/chercher-0.1.14.tar.gz", hash = "sha256:38ddfe82439982dda06de3bfae8e05c531a519faf95d5ec5ec33d61e37f9101d", size = 25527, upload_time = "2025-04-23T15:17:51.907Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e2/be/4bfa5cdafdbf4c52100583f5c7c10bbe6b3e009c8e37dd18658e6a59abdf/chercher-0.1.13-py3-none-any.whl", hash = "sha256:0f27e075b665e8bc7ee3710b2db9bab82c33622309c8d1017f1b29ef692c1821", size = 6446, upload_time = "2025-04-23T08:44:45.937Z" },
+    { url = "https://files.pythonhosted.org/packages/42/ef/1a5424a33bffbb74e54e6eefe54d9e3f28a8142055cbc3078d4d518f9c63/chercher-0.1.14-py3-none-any.whl", hash = "sha256:7cc177c0a5ab2df00bec902c1d993f3fc253fe460ed720dcdb28728d1eb5b90c", size = 6510, upload_time = "2025-04-23T15:17:51.099Z" },
 ]
 
 [[package]]
 name = "chercher-plugin-epub"
-version = "0.1.0"
+version = "0.1.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "chercher" },
     { name = "pymupdf" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/21/78/5a8aa0b4840880a06b8eb18cbe6d52da97b3e5d6798d59e51d8b9d705902/chercher_plugin_epub-0.1.0.tar.gz", hash = "sha256:ee4a16f31eaa041e25e8339fc57248784f2c705e33801b69e781e1ca9b0c40cb", size = 2463, upload_time = "2025-04-19T18:23:17.85Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/71/bb/4b5019e948764df5bfcaab94da96b36ad0ce97c59675f7dcc0d297295cec/chercher_plugin_epub-0.1.1.tar.gz", hash = "sha256:bb34d7164784bbc31b32573657fc60766ca20c43429c27c6d8ec3b03bf353b2a", size = 2932, upload_time = "2025-04-23T14:06:25.396Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/37/0c/8c7652f7903b652b25d2dd0313cf12243c7ec5261dcb0955ec12f4c89aae/chercher_plugin_epub-0.1.0-py3-none-any.whl", hash = "sha256:c77ea2d658a6bde1e527709a17639a83a151a8406e505c0423f97f4bd5825973", size = 2932, upload_time = "2025-04-19T18:23:16.85Z" },
+    { url = "https://files.pythonhosted.org/packages/6d/b1/fa27a0c9a3dd5fd0ce6dadbbf8992725df47dab31db23946f85f6195c642/chercher_plugin_epub-0.1.1-py3-none-any.whl", hash = "sha256:fb7fc35942319ff9486f4ed5635f9d3aadf7002c1c421f6eb7ac6ffc3565b84c", size = 3095, upload_time = "2025-04-23T14:06:24.126Z" },
 ]
 
 [[package]]
 name = "chercher-plugin-md"
-version = "0.1.1"
+version = "0.1.2"
 source = { virtual = "." }
 dependencies = [
     { name = "chercher" },
@@ -61,7 +61,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "chercher", specifier = ">=0.1.7" },
+    { name = "chercher", specifier = ">=0.1.14" },
     { name = "python-frontmatter", specifier = ">=1.1.0" },
 ]
 
@@ -83,14 +83,14 @@ wheels = [
 
 [[package]]
 name = "chercher-plugin-txt"
-version = "0.1.1"
+version = "0.1.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "chercher" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/aa/a0/5b3d1c49d0f93065854e8c6c7eaae736471134e0e788a54c46ed00eb63ef/chercher_plugin_txt-0.1.1.tar.gz", hash = "sha256:c22dc9ee07b63686f79c4320a43fe358c2993e4e960c78278395498bec5d2750", size = 2738, upload_time = "2025-04-23T08:41:58.305Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c7/02/91361135e4d6787941bbbd4a5301ef0dc95a2571fc2c49844be7503263a6/chercher_plugin_txt-0.1.2.tar.gz", hash = "sha256:27e0140060780e065ceed6ad13eb68a1bc5ae901f4781c86dbab0165f3f629d1", size = 2796, upload_time = "2025-04-23T15:27:42.656Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/bc/bf/da4f71e698d4c011481d4848b69c2315bff25b78dfcc419e96e7c897eee1/chercher_plugin_txt-0.1.1-py3-none-any.whl", hash = "sha256:cfae9f6fc091af53347a0d12075729f038379eaabc0a503ce4a669a55c5faa70", size = 2989, upload_time = "2025-04-23T08:41:56.972Z" },
+    { url = "https://files.pythonhosted.org/packages/60/94/2eed4d7e9160b69d939fbda7a131a258f3fbf0fd985ee9164979fe1b00ac/chercher_plugin_txt-0.1.2-py3-none-any.whl", hash = "sha256:cc4bbbe39fe44ce317ba45fbaa79d639fa1d6da0cc0d575944b2b341a48a06af", size = 3045, upload_time = "2025-04-23T15:27:41.221Z" },
 ]
 
 [[package]]

@@ -1,6 +1,6 @@
 # chercher-plugin-md
 
-[Chercher](https://github.com/dnlzrgz/chercher) plugin that add support for markdown files.
+[Chercher](https://github.com/dnlzrgz/chercher) plugin that adds support for markdown files.
 
 ## Installation
 
