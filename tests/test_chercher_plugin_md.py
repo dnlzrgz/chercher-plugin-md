@@ -20,6 +20,7 @@ def test_valid_file(tmp_path):
     for doc in documents:
         assert isinstance(doc, Document)
         assert doc.uri == uri
+        assert doc.title == p.stem
         assert doc.body == CONTENT
         assert isinstance(doc.metadata, dict)
         assert doc.metadata["title"] == "TDD"
