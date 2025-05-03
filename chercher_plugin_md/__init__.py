@@ -27,8 +27,23 @@ def ingest(uri: str) -> Generator[Document, None, None]:
 
     yield Document(
         uri=path.as_uri(),
-        title=path.stem,
+        title=path.name,
         body=post.content,
         hash=hash.hexdigest(),
-        metadata=post.metadata,
+        metadata={},
     )
+
+
+@hookimpl()
+def prune(uri: str) -> bool | None:
+    if uri.startswith("file://"):
+        parsed_uri = urlparse(uri)
+        path = Path(parsed_uri.path).resolve()
+    else:
+        return
+
+    if path.suffix != ".md":
+        return
+
+    if not path.exists() or not path.is_file():
+        return True
