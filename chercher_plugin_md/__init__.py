@@ -30,7 +30,7 @@ def ingest(uri: str) -> Generator[Document, None, None]:
         title=path.name,
         body=post.content,
         hash=hash.hexdigest(),
-        metadata={},
+        metadata=post.metadata,
     )
 
 
